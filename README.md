@@ -25,6 +25,12 @@ entityEl.parentNode.removeChild(entityEl);
 ```
 これでentityEl(DOM)を削除出来る
 
+# A-Frameで音を流す
+
+[A-Frame公式 sound](https://aframe.io/docs/0.8.0/components/sound.html#sidebar)
+
+**iOSで流すには色々やる必要がありそう**
+
 # 学習記録メモ
 
 [360度画像ページ](https://aframe.io/docs/0.8.0/guides/building-a-360-image-gallery.html)の、**event-set**以降
