@@ -16,6 +16,9 @@ $(window).on("load",function () {
   //$('#loading').show();
   $(sky).attr('color', '#FFFFFF');
   $(sky).attr('src', '#skyTexture');
+
+  var bg = document.querySelector('#bg_sound');
+  bg.components.sound.playSound();
   //$('#main').show();
   // $("a-scene").append('#main');
 });
