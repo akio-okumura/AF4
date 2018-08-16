@@ -11,8 +11,6 @@ window.onload = function(){
   // ページ読み込み時に実行したい処理
   star_text.setAttribute('position', '0 0 '+cur_z+'');
   star_text.setAttribute('rotation', ''+x_angle+' 0 0');
-  var bg = document.querySelector('#bg_sound');
-  bg.components.sound.playSound();
 }
 
 // 文字を動かすための関数
