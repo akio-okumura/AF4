@@ -31,6 +31,10 @@ entityEl.parentNode.removeChild(entityEl);
 ```
 これでentityEl(DOM)を削除出来る
 
+fuseとは、一定時間対象にカーソルを乗せるとクリックが発生する機能です。
+
+デフォルトでは使えませんが、a-cursorのfuseプロパティをonにすることで有効にできます。
+
 # A-Frameで音を流す
 
 [A-Frame公式 sound](https://aframe.io/docs/0.8.0/components/sound.html#sidebar)

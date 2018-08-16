@@ -90,3 +90,16 @@ vc.addEventListener('click', function () {
       }}, 10);
   }
 });
+
+var startTime;
+var endTime;
+
+// 左下にある平面1
+var plane1 = document.querySelector('#plane1');
+
+// マウスエンターイベント
+plane1.addEventListener('mouseenter' function(){
+  startTime = new Date(); // 開始時間測定
+});
+
+// 一定時間ごとに経過時間をま
