@@ -102,8 +102,6 @@ var el_in;
 // カーソルがぶつかったら
 plane1.addEventListener('mouseenter', function(){
 
-  plane1.emit('fade1');
-
   startTime = new Date(); // 開始時間測定
 
   // 経過時間を測る関数を0.1秒毎に回す
@@ -111,7 +109,7 @@ plane1.addEventListener('mouseenter', function(){
     // 3秒以上経過した時の処理
     if(elapsed_time(startTime) >= 3.0) {
       clearInterval(el_in); // インターバル止める
-      plane1.setAttribute('scale', '2 2 2');
+      plane1.emit('fade1');
     }
   });
 });
