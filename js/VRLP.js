@@ -98,7 +98,7 @@ var endTime;
 var plane1 = document.querySelector('#plane1');
 
 // カーソルがぶつかったら
-plane1.addEventListener('mouseenter' function(){
+plane1.addEventListener('mouseenter', function(){
   startTime = new Date(); // 開始時間測定
 
   // 経過時間を測る関数を0.1秒毎に回す
