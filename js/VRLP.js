@@ -96,19 +96,27 @@ var endTime;
 
 // 左下にある平面1
 var plane1 = document.querySelector('#plane1');
+// カーソル計測の為のインターバル
+var el_in;
 
 // カーソルがぶつかったら
 plane1.addEventListener('mouseenter', function(){
   startTime = new Date(); // 開始時間測定
 
   // 経過時間を測る関数を0.1秒毎に回す
-  var el_in = setInterval( function() {
+  el_in = setInterval( function(){
     // 3秒以上経過した時の処理
     if(elapsed_time(startTime) >= 3.0) {
       clearInterval(el_in); // インターバル止める
       plane1.setAttribute('scale', '2 2 2');
     }
   });
+});
+
+// カーソルが外れたら
+plane1.addEventListener('mouseleave', function(){
+  clearInterval(el_in); // インターバル止める
+  startTime = NaN; // startTime空にする
 });
 
 // 開始時刻(start)を渡すと、現在時刻までの経過秒を返す関数
