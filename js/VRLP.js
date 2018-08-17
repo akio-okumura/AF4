@@ -101,6 +101,12 @@ var el_in;
 
 // カーソルがぶつかったら
 plane1.addEventListener('mouseenter', function(){
+
+  anime({
+    targets: '#plane1',
+    translateX: 250
+  });
+
   startTime = new Date(); // 開始時間測定
 
   // 経過時間を測る関数を0.1秒毎に回す
