@@ -57,10 +57,10 @@
           </a-entity>
 
           <!-- heightを 1 -> 8 にすることで縦に伸びるアニメーションを作る -->
-          <a-plane id="plane1" color="#FFFFFF" height="1" width="4"
-                   position="-5 0 -7.5" opacity="0.5" color="black">
+          <a-plane id="plane1" color="blue" height="1" width="4"
+                   position="-5 0 -7.5" opacity="0.5">
             <a-animation attribute="height" begin="fade1" to="8"></a-animation>
-            <a-animation attribute=position begin="fade1" to="-5 -4 -7.5"></a-animation>
+            <a-animation attribute="scale" begin="fade2" to="1.2 1.2 1.2"></a-animation>
           </a-plane>
 
 

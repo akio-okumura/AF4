@@ -102,6 +102,8 @@ var el_in;
 // カーソルがぶつかったら
 plane1.addEventListener('mouseenter', function(){
 
+  plane1.emit('fade2');
+
   startTime = new Date(); // 開始時間測定
 
   // 経過時間を測る関数を0.1秒毎に回す
