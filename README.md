@@ -35,6 +35,17 @@ fuseとは、一定時間対象にカーソルを乗せるとクリックが発�
 
 デフォルトでは使えませんが、a-cursorのfuseプロパティをonにすることで有効にできます。
 
+# アニメーション
+
+```html
+<a-animation attribute="material.opacity" begin="trigger_name" to="0"></a-animation>
+```
+```JavaScript
+el.emit('trigger_name');
+```
+
+これでアニメーションのトリガーを付けられる、便利
+
 # A-Frameで音を流す
 
 [A-Frame公式 sound](https://aframe.io/docs/0.8.0/components/sound.html#sidebar)
