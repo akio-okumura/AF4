@@ -46,6 +46,8 @@ el.emit('trigger_name');
 
 これでアニメーションのトリガーを付けられる、便利
 
+同名トリガーを付ければ複数アニメを置ける
+
 # A-Frameで音を流す
 
 [A-Frame公式 sound](https://aframe.io/docs/0.8.0/components/sound.html#sidebar)

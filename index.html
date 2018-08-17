@@ -28,14 +28,14 @@
         </a-entity>
 
 
-          <a-text value="VR CAMP" id="VC" font="font/V-GERB(bold)-msdf.json" negate="false" scale="7.5 7.5 1" position="0 3.5 -6" align="center"
+          <a-text value="VR CAMP" id="VC" font="font/V-GERB(bold)-msdf.json" negate="false" scale="9 9 1" position="0 3.5 -10" align="center"
                   geometry="primitive:plane; width:0.9; height:0.4"
                   material="opacity:0.0; color:red"
                   ></a-text>
 
-          <a-text value="さあ、飛び出せ" id="jump_text" font="font/GenEiKoburiMinT-R-msdf.json" negate="false" scale="5 5 1" position="0 2.5 -6" align="center"></a-text>
+          <a-text value="さあ、飛び出せ" id="jump_text" font="font/GenEiKoburiMinT-R-msdf.json" negate="false" scale="6 6 1" position="0 2.5 -10" align="center"></a-text>
 
-          <a-box color="#0095DD" position="0 0 -6" id="start_box" rotation="20 45 0" scale="2 2 2">
+          <a-box color="#0095DD" position="0 -1 -6" id="start_box" rotation="20 45 0" scale="1 1 1">
             <a-animation attribute="rotation"
                          dur="5000"
                          from="20 45 0"
@@ -58,9 +58,9 @@
 
           <!-- heightを 1 -> 8 にすることで縦に伸びるアニメーションを作る -->
           <a-plane id="plane1" color="#FFFFFF" height="1" width="4"
-                   position="-5 0 -7.5" opacity="0.5">
+                   position="-5 0 -7.5" opacity="0.5" color="black">
             <a-animation attribute="height" begin="fade1" to="8"></a-animation>
-            <a-animation attribute="color" begin="fade1" to="red"></a-animation>
+            <a-animation attribute=position begin="fade1" to="-5 -4 -7.5"></a-animation>
           </a-plane>
 
 
