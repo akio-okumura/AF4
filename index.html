@@ -58,7 +58,9 @@
 
           <!-- heightを 1 -> 8 にすることで縦に伸びるアニメーションを作る -->
           <a-plane id="plane1" color="#FFFFFF" height="8" width="4"
-                   position="-5 0 -7.5" opacity="0.5"></a-plane>
+                   position="-5 0 -7.5" opacity="0.5">
+            <a-animation attribute="material.opacity" begin="fade" to="0"></a-animation>
+          </a-plane>
 
 
       </a-scene>

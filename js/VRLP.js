@@ -102,10 +102,7 @@ var el_in;
 // カーソルがぶつかったら
 plane1.addEventListener('mouseenter', function(){
 
-  anime({
-    targets: '#plane1',
-    translateX: 250
-  });
+  plane1.emit('fade');
 
   startTime = new Date(); // 開始時間測定
 
