@@ -15,6 +15,8 @@
           <!--
             <audio id="bgm" src="sound/star_wars.mp3" preload="auto"></audio>
           -->
+          <a-asset-item id="crate-obj" src="3d/Summergirl.obj"></a-asset-item>
+          <a-asset-item id="crate-mtl" src="3d/Summergirl.mtl"></a-asset-item>
         </a-assets>
 
         <!--
@@ -26,6 +28,9 @@
         <a-entity camera look-controls>
           <a-cursor></a-cursor>
         </a-entity>
+
+
+            <a-obj-model src="#crate-obj" mtl="#crate-mtl" position="0 0 -15 " scale="0.01 0.01 0.01"></a-obj-model>
 
 
           <a-text value="VR CAMP" id="VC" font="font/V-GERB(bold)-msdf.json" negate="false" scale="9 9 1" position="0 3.5 -10" align="center"
